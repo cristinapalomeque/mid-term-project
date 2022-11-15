@@ -21,7 +21,7 @@ h1 {
   text-align: center;
 }
 
-h1 > p {
+h1 + p {
   color: #6b708d;
   font-size: 17px;
   text-align: center;
@@ -75,6 +75,19 @@ h1 > p {
 
 #hero-card-1,
 #hero-card-2 {
+  display: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat (2, 1fr);
+  row-gap: 50px;
+  margin-top: 50px;
+  justify-items: center;
+}
+
+.only-desktop {
   display: none;
 }
 
