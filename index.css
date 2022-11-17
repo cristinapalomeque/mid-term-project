@@ -134,6 +134,91 @@ h1 + p {
   font-weight: 400;
 }
 
+.box-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #292e47;
+  align-items: center;
+  position: relative;
+}
+
+.box-container > h3 {
+  color: #ffffff;
+}
+
+.box-container > p {
+  color: #ffc600;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.client {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.client-info {
+  padding-left: 20px;
+}
+#client-img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+#Kristin {
+  color: #a2d6f9;
+}
+
+#Booking {
+  color: #ffffff;
+}
+
+#emoji-top-left,
+#emoji-top-right,
+#emoji-bottom-left,
+#emoji-bottom-right {
+  visibility: hidden;
+}
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.card-services {
+  background-color: #ffffff;
+  margin-right: 40px;
+  padding: 40px;
+  width: 340px;
+  height: 260px;
+}
+
+.service-title {
+  font-size: 24px;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.icon-services {
+  background-color: #ecf7ff;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.link-services {
+  text-decoration: none;
+  color: #072ac8;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.service-text {
+  margin-bottom: 30px;
+}
+
 @media screen and (min-width: 790px) {
   h1 {
     font-size: 60px;
@@ -188,5 +273,55 @@ h1 + p {
   .img-project {
     height: 240px;
     width: 340px;
+  }
+
+  #emoji-top-left {
+    visibility: visible;
+    position: absolute;
+    left: 0%;
+    top: 0;
+    width: 150px;
+    height: 150px;
+  }
+
+  #emoji-top-right {
+    visibility: visible;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    width: 150px;
+    height: 150px;
+  }
+
+  #emoji-bottom-left {
+    visibility: visible;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 150px;
+    height: 150px;
+  }
+
+  #emoji-bottom-right {
+    visibility: visible;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 150px;
+    height: 150px;
+  }
+
+  .services-container {
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+  }
+
+  .card-services {
+    background-color: #ffffff;
+    margin-right: 40px;
+    padding: 40px;
+    width: 340px;
+    height: 360px;
   }
 }
