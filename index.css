@@ -140,16 +140,25 @@ h1 + p {
   background-color: #292e47;
   align-items: center;
   position: relative;
+  min-height: 622px;
 }
 
+#grey-box {
+  margin-left: -38px;
+  margin-right: -38px;
+}
 .box-container > h3 {
   color: #ffffff;
+  margin-top: 120px;
 }
 
 .box-container > p {
   color: #ffc600;
   font-size: 24px;
   font-weight: 500;
+  margin-top: 104px;
+  text-align: center;
+  margin-bottom: 105px;
 }
 
 .client {
@@ -185,13 +194,13 @@ h1 + p {
 .services-container {
   display: flex;
   flex-direction: column;
+  justify-items: center;
 }
 
 .card-services {
   background-color: #ffffff;
   margin-bottom: 40px;
   padding: 40px;
-  width: 90%;
   height: 260px;
 }
 
@@ -218,6 +227,50 @@ h1 + p {
   margin-bottom: 30px;
 }
 
+.projects-heading {
+  text-align: left;
+}
+
+#mail-container {
+  height: 500px;
+  background-color: #ffc600;
+  padding-top: 136px;
+}
+
+.body-20 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #292e47;
+  text-align: center;
+}
+
+#email_input {
+  width: 393px;
+  height: 80px;
+  font-size: 17px;
+  background-image: url("/midtermproject/project-assets/newsletter/icon/mail.svg");
+  background-repeat: no-repeat;
+}
+
+#email-form {
+  align-self: center;
+  margin-top: 50px;
+}
+
+#submit {
+  width: 198px;
+  height: 80px;
+  background-color: #072ac8;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+#mail-container {
+  display: flex;
+  flex-direction: column;
+}
+
 @media screen and (min-width: 790px) {
   h1 {
     font-size: 60px;
@@ -234,26 +287,33 @@ h1 + p {
     display: flex;
     flex-direction: row;
   }
-
-  #hero-img {
-    position: relative;
+  #hero-imgs {
+    background-image: url("/midtermproject/project-assets/hero-section/hero-image.png");
+    min-width: 570px;
+    height: 650px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
+
   #hero-card-1,
   #hero-card-2 {
-    display: inline;
-    position: absolute;
-    left: 30px;
-    width: 20%;
-  }
-  #hero-card-1 {
-    top: 30px;
-    left: 700px;
+    display: block;
+    max-width: 200px;
   }
 
-  #hero-card-2 {
-    top: 600px;
-    left: 1200px;
+  #container-card1 {
+    display: flex;
   }
+
+  #container-card2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 30px;
+  }
+
   .grid-container {
     display: flex;
     flex-direction: row;
@@ -277,8 +337,8 @@ h1 + p {
   #emoji-top-left {
     visibility: visible;
     position: absolute;
-    left: 0%;
-    top: 0;
+    left: 76px;
+    top: 51px;
     width: 150px;
     height: 150px;
   }
@@ -286,8 +346,8 @@ h1 + p {
   #emoji-top-right {
     visibility: visible;
     position: absolute;
-    right: 0%;
-    top: 0%;
+    right: 76px;
+    top: 51px;
     width: 150px;
     height: 150px;
   }
@@ -295,8 +355,8 @@ h1 + p {
   #emoji-bottom-left {
     visibility: visible;
     position: absolute;
-    bottom: 0%;
-    left: 0%;
+    bottom: 73px;
+    left: 63px;
     width: 150px;
     height: 150px;
   }
@@ -304,8 +364,8 @@ h1 + p {
   #emoji-bottom-right {
     visibility: visible;
     position: absolute;
-    bottom: 0%;
-    right: 0%;
+    bottom: 73px;
+    right: 63px;
     width: 150px;
     height: 150px;
   }
@@ -313,14 +373,12 @@ h1 + p {
   .services-container {
     display: flex;
     flex-direction: row;
-    margin-right: 30px;
   }
 
   .card-services {
     background-color: #ffffff;
-    margin-right: 40px;
+    margin: 0 10px;
     padding: 40px;
-    width: 340px;
     height: 360px;
   }
 }
