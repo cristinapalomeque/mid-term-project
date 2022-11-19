@@ -271,6 +271,27 @@ h1 + p {
   flex-direction: column;
 }
 
+#footer-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 170px;
+  align-items: stretch;
+}
+
+#footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat (2, 1fr);
+  justify-items: right;
+}
+
+.footer-link,
+#address {
+  text-decoration: none;
+  font-size: 17px;
+  color: #6b708d;
+}
+
 @media screen and (min-width: 790px) {
   h1 {
     font-size: 60px;
