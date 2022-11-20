@@ -38,7 +38,6 @@ h3 {
 .body-24 {
   font-size: 24px;
   font-weight: 500;
-  color: #6b708d;
 }
 
 .body-20 {
@@ -135,7 +134,8 @@ h1 + p {
 
 .card h3,
 .card p,
-.card a {
+.card a,
+.card div {
   padding-left: 30px;
 }
 .img-project {
@@ -329,6 +329,7 @@ h1 + p {
   width: 100%;
   height: 444px;
   object-fit: cover;
+  filter: drop-shadow(0 0 0.75rem #8644dd);
 }
 
 .article-text {
