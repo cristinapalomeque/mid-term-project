@@ -369,9 +369,30 @@ h1 + p {
   flex-direction: column;
 }
 
-.flex-col {
+.form-field {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-field > label {
+  font-size: 20px;
+  font-weight: 400;
+  color: #6b708d;
+  margin-bottom: 10px;
+}
+
+.form-field input,
+.form-field textarea {
+  font-size: 17px;
+  font-weight: 400;
+  color: #6b708d;
+  background-color: rgba(107, 112, 141, 0.1);
+  border: none;
+  padding: 22px 20px;
+}
+.form-field textarea {
+  height: 200px;
 }
 
 @media screen and (min-width: 790px) {
@@ -544,5 +565,12 @@ h1 + p {
     font-weight: 500;
     margin-top: 0;
     margin-left: 20px;
+  }
+
+  #mail-phone-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
   }
 }
