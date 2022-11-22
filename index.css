@@ -47,8 +47,14 @@ h3 {
 .body-20 {
   font-size: 20px;
   font-weight: 400;
-  color: #292e47;
+  color: #6b708d;
   text-align: center;
+}
+
+.body-17 {
+  font-size: 17px;
+  font-weight: 400;
+  color: #6b708d;
 }
 
 h1 + p {
@@ -287,8 +293,9 @@ h1 + p {
 
 #footer-container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  margin-top: 170px;
+  margin-top: 70px;
   align-items: stretch;
 }
 
@@ -296,19 +303,37 @@ h1 + p {
   width: 98px;
 }
 
+#footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 70px;
+}
 #footer-links {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat (2, 1fr);
   justify-items: left;
   grid-gap: 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #072ac8;
 }
 
-.footer-link,
 #address {
   text-decoration: none;
   font-size: 17px;
   color: #6b708d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.footer-link {
+  text-decoration: none;
+  font-size: 17px;
+  color: #072ac8;
 }
 
 #project-subhead {
@@ -337,6 +362,16 @@ h1 + p {
 
 .article-text {
   text-align: left;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 790px) {
@@ -459,6 +494,28 @@ h1 + p {
 
   #contact_section {
     margin: 200px -38px 0 -38px;
+  }
+
+  #footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 170px;
+    align-items: stretch;
+  }
+
+  #footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat (2, 1fr);
+    justify-items: left;
+    grid-gap: 16px;
+  }
+
+  #address {
+    text-decoration: none;
+    font-size: 17px;
+    color: #6b708d;
   }
 
   #email-form {
