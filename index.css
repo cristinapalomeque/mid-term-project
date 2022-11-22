@@ -4,6 +4,10 @@ body {
 
 #page {
   background-color: #f2f4fc;
+  display: flex;
+  flex-direction: column;
+  padding-right: 60px;
+  padding-left: 60px;
 }
 #navbar-menu a {
   text-decoration: none;
@@ -51,12 +55,6 @@ h1 + p {
   color: #6b708d;
   font-size: 17px;
   text-align: center;
-}
-#page {
-  display: flex;
-  flex-direction: column;
-  padding-right: 30px;
-  padding-left: 30px;
 }
 
 .topnav {
@@ -294,11 +292,16 @@ h1 + p {
   align-items: stretch;
 }
 
+#circle-logo {
+  width: 98px;
+}
+
 #footer-links {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat (2, 1fr);
-  justify-items: right;
+  justify-items: left;
+  grid-gap: 16px;
 }
 
 .footer-link,
@@ -454,6 +457,19 @@ h1 + p {
     height: 360px;
   }
 
+  #contact_section {
+    margin: 200px -38px 0 -38px;
+  }
+
+  #email-form {
+    align-self: center;
+    margin-top: 50px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
   #email_input {
     width: 393px;
     height: 80px;
@@ -469,5 +485,7 @@ h1 + p {
     color: #ffffff;
     font-size: 17px;
     font-weight: 500;
+    margin-top: 0;
+    margin-left: 20px;
   }
 }
