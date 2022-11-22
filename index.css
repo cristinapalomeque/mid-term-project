@@ -396,7 +396,7 @@ h1 + p {
 }
 
 #submit-form {
-  width: 1110px;
+  width: 100%;
   height: 80px;
   background-color: #072ac8;
   color: #ffffff;
@@ -574,10 +574,17 @@ h1 + p {
     margin-top: 0;
     margin-left: 20px;
   }
+  .form-field {
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
 
   #mail-phone-container {
     display: flex;
     flex-direction: row;
-    align-items: stretch;
+  }
+
+  #mail-phone-container .form-field {
+    width: 50%;
   }
 }
