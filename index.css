@@ -395,6 +395,14 @@ h1 + p {
   height: 200px;
 }
 
+#submit-form {
+  width: 1110px;
+  height: 80px;
+  background-color: #072ac8;
+  color: #ffffff;
+  font-size: 17px;
+}
+
 @media screen and (min-width: 790px) {
   h1 {
     font-size: 60px;
@@ -570,7 +578,6 @@ h1 + p {
   #mail-phone-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: stretch;
   }
 }
