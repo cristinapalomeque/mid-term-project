@@ -21,3 +21,11 @@ function loadBeers() {
     .catch((err) => console.log(err));
 }
 loadBeers();
+
+const subButt = document.getElementById("submit");
+subButt.addEventListener("click", () => {
+  const input = document.getElementById("email_input");
+  if (input.value.indexOf("@") === -1) {
+    alert("Please, include an @ in the email address");
+  }
+});
