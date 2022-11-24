@@ -73,6 +73,11 @@ h1 + p {
   display: none;
 }
 
+#contact > a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 #hero {
   display: flex;
   flex-direction: column;
