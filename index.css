@@ -211,7 +211,7 @@ h1 + p {
 #emoji-top-right,
 #emoji-bottom-left,
 #emoji-bottom-right {
-  visibility: hidden;
+  display: none;
 }
 
 .services-container {

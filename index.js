@@ -20,12 +20,24 @@ function loadBeers() {
     })
     .catch((err) => console.log(err));
 }
-loadBeers();
 
-const subButt = document.getElementById("submit");
-subButt.addEventListener("click", () => {
-  const input = document.getElementById("email_input");
-  if (input.value.indexOf("@") === -1) {
-    alert("Please, include an @ in the email address");
-  }
-});
+function initMainPage() {
+  const subButt = document.getElementById("submit");
+  subButt.addEventListener("click", () => {
+    const input = document.getElementById("email_input");
+    if (input.value.indexOf("@") === -1) {
+      alert("Please, include an @ in the email address");
+    }
+  });
+  loadBeers();
+}
+
+function initContactPage() {
+  const contButt = document.getElementById("submit-form");
+  contButt.addEventListener("click", () => {
+    const nameForm = document.getElementById("name");
+    if (nameForm.value.length === 0) {
+      alert("This field is mandatory");
+    }
+  });
+}
