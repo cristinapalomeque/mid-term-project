@@ -74,7 +74,12 @@ h1 + p {
 }
 
 .hamburger {
-  display: block;
+  display: flex;
+  flex-direction: column;
+}
+
+.hamburger-links {
+  display: none;
 }
 
 #contact {
@@ -153,7 +158,7 @@ h1 + p {
 }
 
 .img-project {
-  width: 100%;
+  max-width: 80%;
   object-fit: contain;
   padding-top: 10px;
 }
