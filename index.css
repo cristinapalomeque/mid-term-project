@@ -146,6 +146,8 @@ h1 + p {
 
 .img-project {
   width: 100%;
+  object-fit: contain;
+  padding-top: 10px;
 }
 
 .card > a {
