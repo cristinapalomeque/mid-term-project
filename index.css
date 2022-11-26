@@ -126,10 +126,6 @@ h1 + p {
   display: none;
 }
 
-.img-project {
-  width: 30%;
-}
-
 .card-container {
   display: flex;
   flex-direction: column;
@@ -147,6 +143,7 @@ h1 + p {
 .card div {
   padding-left: 30px;
 }
+
 .img-project {
   width: 100%;
 }
@@ -404,6 +401,20 @@ h1 + p {
   background-color: #072ac8;
   color: #ffffff;
   font-size: 17px;
+}
+
+.error {
+  display: none;
+  color: #514d67;
+  font-size: 14px;
+  background-color: #f2f4fc;
+  border: 1px solid black;
+  width: fit-content;
+  padding: 6px;
+  margin-top: 4px;
+  border-radius: 5px;
+  box-shadow: 6px 3px 3px #514d67;
+  align-self: center;
 }
 
 @media screen and (min-width: 790px) {

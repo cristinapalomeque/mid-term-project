@@ -37,7 +37,20 @@ function initContactPage() {
   contButt.addEventListener("click", () => {
     const nameForm = document.getElementById("name");
     if (nameForm.value.length === 0) {
-      alert("This field is mandatory");
+      const nameError = document.getElementById("name-error");
+      //nameError.classList.remove("hidden-error");
+      nameError.style.display = "block";
+      setTimeout(() => {
+        nameError.style.display = "none";
+      }, 3000);
+    }
+    const message = document.getElementById("message");
+    if (message.value.length === 0) {
+      const msgError = document.getElementById("msg-error");
+      msgError.style.display = "block";
+      setTimeout(() => {
+        msgError.style.display = "none";
+      }, 3000);
     }
   });
 }
