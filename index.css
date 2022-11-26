@@ -1,9 +1,9 @@
 body {
   font-family: Roboto;
+  background-color: #f2f4fc;
 }
 
 #page {
-  background-color: #f2f4fc;
   display: flex;
   flex-direction: column;
   padding-right: 60px;
@@ -15,9 +15,6 @@ body {
   font-size: 17px;
   font-weight: 500;
   padding-right: 30px;
-}
-.home-nav {
-  color: #072ac8;
 }
 
 h1 {
@@ -85,6 +82,21 @@ h1 + p {
 
 .hamburger-links {
   display: none;
+  background-color: #c8c8c8;
+  margin: 20px -68px 0 -68px;
+  padding: 20px 20px 0 20px;
+}
+
+.hamburger-links > a {
+  text-decoration: none;
+  padding-bottom: 20px;
+  color: #514d67;
+}
+a.home-nav {
+  color: #072ac8;
+}
+.hamburger-links > a:hover {
+  color: #072ac8;
 }
 
 .active {
@@ -449,6 +461,14 @@ h1 + p {
   }
   .navbar-desktop {
     display: block;
+  }
+  a.home-nav,
+  #navbar-menu a.home-nav {
+    color: #072ac8;
+  }
+
+  .topnav {
+    margin-top: 30px;
   }
 
   h1 {
