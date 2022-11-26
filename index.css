@@ -16,7 +16,7 @@ body {
   font-weight: 500;
   padding-right: 30px;
 }
-#home-nav {
+.home-nav {
   color: #072ac8;
 }
 
@@ -76,10 +76,20 @@ h1 + p {
 .hamburger {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
+}
+
+.hamburger:hover {
+  cursor: pointer;
 }
 
 .hamburger-links {
   display: none;
+}
+
+.active {
+  display: flex;
+  flex-direction: column;
 }
 
 #contact {
@@ -437,14 +447,8 @@ h1 + p {
     display: none;
     cursor: pointer;
   }
-  .bar {
+  .navbar-desktop {
     display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    background-color: white;
   }
 
   h1 {
