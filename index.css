@@ -180,9 +180,12 @@ a.home-nav {
 }
 
 .img-project {
-  max-width: 80%;
+  max-width: 60%;
   object-fit: contain;
   padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .card > a {
