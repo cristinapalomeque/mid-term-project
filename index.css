@@ -34,6 +34,7 @@ h2 {
 h3 {
   font-size: 40px;
   font-weight: 700;
+  text-align: center;
 }
 
 .body-24 {
@@ -301,7 +302,7 @@ a.home-nav {
 }
 
 #email_input {
-  width: 100%;
+  width: 80%;
   height: 80px;
   font-size: 17px;
   background-image: url("/midtermproject/project-assets/newsletter/icon/mail.svg");

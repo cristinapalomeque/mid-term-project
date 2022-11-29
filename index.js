@@ -26,7 +26,12 @@ function initMainPage() {
   subButt.addEventListener("click", () => {
     const input = document.getElementById("email_input");
     if (input.value.indexOf("@") === -1) {
-      alert("Please, include an @ in the email address");
+      //alert("Please, include an @ in the email address");
+      const fieldError = document.getElementById("field-error");
+      fieldError.style.display = "block";
+      setTimeout(() => {
+        fieldError.style.display = "none";
+      }, 3000);
     }
   });
   loadBeers();
