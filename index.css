@@ -158,6 +158,10 @@ a.home-nav {
   justify-items: center;
 }
 
+.grid-container > div > img:hover {
+  filter: grayscale(1);
+}
+
 .only-desktop {
   display: none;
 }
@@ -522,6 +526,7 @@ a.home-nav {
     flex-direction: row;
     justify-content: space-around;
   }
+
   .card-container {
     flex-direction: row;
     justify-content: center;
