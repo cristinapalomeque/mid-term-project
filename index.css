@@ -305,7 +305,7 @@ a.home-nav {
   width: 80%;
   height: 80px;
   font-size: 17px;
-  background-image: url("/midtermproject/project-assets/newsletter/icon/mail.svg");
+  background-image: url("project-assets/newsletter/icon/mail.svg");
   background-repeat: no-repeat;
   background-position: 30px 25px;
   padding-left: 70px;
@@ -491,7 +491,7 @@ a.home-nav {
     flex-direction: row;
   }
   #hero-imgs {
-    background-image: url("/midtermproject/project-assets/hero-section/hero-image.png");
+    background-image: url("project-assets/hero-section/hero-image.png");
     min-width: 570px;
     height: 650px;
     background-size: cover;
@@ -631,7 +631,7 @@ a.home-nav {
     width: 393px;
     height: 80px;
     font-size: 17px;
-    background-image: url("/midtermproject/project-assets/newsletter/icon/mail.svg");
+    background-image: url("project-assets/newsletter/icon/mail.svg");
     background-repeat: no-repeat;
   }
 
