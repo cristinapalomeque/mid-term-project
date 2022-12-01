@@ -66,3 +66,8 @@ const navMenu = document.querySelector(".hamburger-links");
 hamburger.addEventListener("click", () => {
   navMenu.classList.toggle("active");
 });
+
+function initProjectPage() {
+  dateCurrent = new Date();
+  document.getElementById("date").innerHTML = dateCurrent;
+}

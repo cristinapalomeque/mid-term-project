@@ -550,7 +550,7 @@ a.home-nav {
     min-height: 622px;
   }
   #emoji-top-left {
-    visibility: visible;
+    display: block;
     position: absolute;
     left: 76px;
     top: 51px;
@@ -559,7 +559,7 @@ a.home-nav {
   }
 
   #emoji-top-right {
-    visibility: visible;
+    display: block;
     position: absolute;
     right: 76px;
     top: 51px;
@@ -568,7 +568,7 @@ a.home-nav {
   }
 
   #emoji-bottom-left {
-    visibility: visible;
+    display: block;
     position: absolute;
     bottom: 73px;
     left: 63px;
@@ -577,7 +577,7 @@ a.home-nav {
   }
 
   #emoji-bottom-right {
-    visibility: visible;
+    display: block;
     position: absolute;
     bottom: 73px;
     right: 63px;
