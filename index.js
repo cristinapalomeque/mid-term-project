@@ -68,6 +68,6 @@ hamburger.addEventListener("click", () => {
 });
 
 function initProjectPage() {
-  dateCurrent = new Date();
-  document.getElementById("date").innerHTML = dateCurrent;
+  let currentDate = new Date();
+  document.getElementById("date").innerHTML = currentDate;
 }

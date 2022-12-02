@@ -158,8 +158,12 @@ a.home-nav {
   justify-items: center;
 }
 
-.grid-container > div > img:hover {
+.grid-container > div > img {
   filter: grayscale(1);
+}
+
+.grid-container > div > img:hover {
+  filter: none;
 }
 
 .only-desktop {
