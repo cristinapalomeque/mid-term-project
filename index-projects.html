@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="index.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,18 +28,29 @@
         /></a>
 
         <div id="navbar-menu">
-          <a id="home-nav" href="index.html">Home</a>
-          <a href="#projects">Projects</a>
-          <a href="#services">Services</a>
+          <div class="navbar-desktop">
+            <a class="home-nav" href="index.html">Home</a>
+            <a href="index-projects.html?project=0">Projects</a>
+            <a href="#services">Services</a>
+          </div>
+          <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+          </div>
         </div>
+
         <button id="contact"><a href="contact.html">Contact Us</a></button>
       </section>
+      <div class="hamburger-links">
+        <a class="home-nav" href="index.html">Home</a>
+        <a href="index-projects.html?project=0">Projects</a>
+        <a href="#services">Services</a>
+      </div>
       <section>
         <article>
-          <h1>Simplify</h1>
+          <h1 id="beerName">Simplify</h1>
           <div id="project-subhead">
             <div class="body-24 project-type">
-              <p>UI design & App Development</p>
+              <p id="tagLine">UI design & App Development</p>
             </div>
 
             <div id="completion">
@@ -80,7 +94,7 @@
               class="img-project"
               src="project-assets/projects-section/4.jpg"
             />
-            <div class="body-24">Dashcoin</div>
+            <h3>Dashcoin</h3>
             <p>UI Design</p>
             <a href="">Learn more</a>
           </div>
@@ -90,7 +104,7 @@
               class="img-project"
               src="project-assets/projects-section/5.jpg"
             />
-            <div class="body-24">Vectorify</div>
+            <h3>Vectorify</h3>
             <p>User Experience Design</p>
             <a href="">Learn more</a>
           </div>
@@ -100,7 +114,7 @@
               class="img-project"
               src="project-assets/projects-section/4.jpg"
             />
-            <div class="body-24">Orbit</div>
+            <h3>Orbit</h3>
             <p>UI Design</p>
             <a href="">Learn more</a>
           </div>
